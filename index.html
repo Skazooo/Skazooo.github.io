@@ -1,42 +1,137 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta http-equiv="content-type" content="text/html" charset="utf-8">
-<link rel="stylesheet" src="http://necolas.github.io/normalize.css/3.0.2/normalize.css">
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+<meta charset="utf-8">
+<title>Index page</title>
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
-<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<title>Orange Udacity Mug</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/click-carousel.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("figure").clickCarousel({margin: 20});	
+});
+</script>  
+<script type="text/javascript" src="http://vk.com/js/api/openapi.js?116"></script>
+
+<script type="text/javascript">
+  VK.init({apiId: 4683118, onlyWidgets: true});
+</script>
+
 </head>
 <body>
-<div class="container">
-    <div class="row">
-    	<div class="col-md-12 text-center pic">
-    	<h1>Orange Udacity Mug</h1>
-    	</div>
-    </div>
-    <div class="row">
-    	<div class="col-md-5">
-    	<img src="images/mug.png" class="img-responsive pic" width="100%" height="100%">
-            <div class="col-md-5 outline rlist miss">
-            <h3>Main Features</h3><br>
-            <ul><li>Holds your favorite drink</li>
-            <li>Energazing colour</li>
-            <li>Remineds you to learn</li></ul><br>
-            </div>
-    	</div>
-    	<div class="col-md-7">
-    	<h3>A Good Way to Start a Day</h3><br>
-    	<p>Bacon ipsum dolor sit amet shoulder drumstick spare ribs shank, magna in sirloin. Turducken dolore tempor irure tenderloin pork belly shankle. Excepteur in strip steak pork chop voluptate tongue, hamburger nostrud kevin enim nulla ut cow incididunt. Do pancetta swine hamburger incididunt in excepteur irure pig labore est venison dolor ex adipisicing. Labore capicola veniam, commodo corned beef ut non rump swine pork chop exercitation ball tip ham deserunt.</p>
-        <p>Ad tri-tip short loin anim beef ribs eu ball tip velit deserunt frankfurter sunt nisi filet mignon. Pork loin quis ham hock mollit cupidatat. Id ground round chuck jerky meatball laborum frankfurter short loin in biltong t-bone doner ea irure. Culpa ex ut id. Nostrud t-bone bresaola pariatur qui tri-tip pork chop, ribeye irure velit pork et in dolore.</p>
-        <p>Bacon in sunt dolor fatback excepteur turkey chuck velit proident frankfurter quis. Nisi shank sirloin sed tenderloin. Magna short ribs kielbasa biltong minim. In esse t- bone est tail kielbasa dolor ullamco tongue mollit sint sirloin chuck venison anim. Short ribs dolore adipisicing, bresaola venison cupidatat short loin turducken biltong leberkas andouille elit ad in occaecat. Ground round pariatur cupidatat ham hock magna tempor ea jowl duis.</p>
-    	</div>
-    </div>
-    	
-    	
-    </div>
-</div>
+<div class="wrapper"> 
+	<header class="main-header" id="top">
+		<a href="index.html"><img src="img/logo.png" alt="Лого" width="160" height="94" class="logo"></a>
+		<div class="social clearfix">
+			<a class="social-logo vk" href="#"></a>
+			<a class="social-logo fb" href="#"></a>
+			<a class="social-logo tw" href="#"></a>
+		</div>
+	</header>
+	<main class="clearfix">
+		<div class="rulet">
+			<a href="#" title="Крутить рулетку" class="rilet-pic"></a>
+			
+			<a href="#"><span class="bigger">Крутить рулетку,</span> <br />
+			<span class="smaller">чтобы перейти к следующему фильму</span></a>
+			
+		</div>
+		<section class="main-content info">
+			<header class="info-header">
+				<img src="img/apollon/apollon.jpg" width="190" height="270" alt="Apollon spoiler" class="img-poster"> 
+				<h2>Аполлон 18 <span class="title">// Apollo 18</span></h2>
+				<blockquote>«Никто не звал нас на Луну»</blockquote>
+				<div class="rating">
+					<a href="#"> 
+						<img src="img/imdb.png" alt="IMDB" width="49" height="20"/>
+					</a>
+					<span>6.0</span>
+					<a href="#"> 
+						<img src="img/kinopoisk.png" alt="Кинопоиск" width="108" height="26"/>
+					</a> 
+					<span>6.1</span>
+				</div>
+			</header>
+			<div class="tech-info">
+				<div class="film-info"><span class="param">Год:</span> 2011</div>
+				<div class="film-info"><span class="param">Страна:</span> США, Канада</div>
+				<div class="film-info"><span class="param">Режиссер:</span> Гонсало Лопес-Гальего</div>
+				<div class="film-info"><span class="param">Жанр:</span>  Ужасы, фантастика, триллер</div>
+				<div class="film-info"><span class="param">Продолжительность:</span>  89 мин.</div>
+			</div>
+			<div class="roles">
+				<h3>Роли исполняли</h3>
+				<div class="film-info"><span class="param">Benjamin Anderson:</span>  Уоррен Кристи // Warren Christie </div>
+				<div class="film-info"><span class="param">Nathan Walker:</span>  Ллойд Оуэн // Lloyd Owen</div>
+				<div class="film-info"><span class="param">В титрах не указан:</span>  Райан Роббинс // Ryan Robbins</div>
+				<div class="film-info"><span class="param">Benjamin Anderson:</span>  Уоррен Кристи // Warren Christie</div>
+				<div class="film-info"><span class="param">Nathan Walker:</span>  Ллойд Оуэн // Lloyd Owen</div>
+			</div>
+		</section>
+		<section class="main-content spoiler">
+			<img src="img/spoiler-logo.png" class="img-spoiler" alt="spoiler"> 
+			<h2>Спойлер</h2>
+			<p>По официальным данным «Аполлон 17» был последней лунной экспедицией с участием людей. Почему уже 35 лет никто не летает на Луну? Ходили слухи, что была еще одна миссия и с ней что-то случилось, но вся информация об этом была засекречена. Не было никаких доказательств, пока не появились эти сенсационные материалы.</p>
 
+			<p>По официальным данным «Аполлон 17» был последней лунной экспедицией с участием людей. Почему уже 35 лет никто не летает на Луну? Ходили слухи, что была еще одна миссия и с ней что-то случилось, но вся информация об этом была засекречена. Не было никаких доказательств, пока не появились эти сенсационные материалы.</p>
+
+			<p>По официальным данным «Аполлон 17» был последней лунной экспедицией с участием людей. Почему уже 35 лет никто не летает на Луну? Ходили слухи, что была еще одна миссия и с ней что-то случилось, но вся информация об этом была засекречена. Не было никаких доказательств, пока не появились эти сенсационные материалы.</p>
+			<div class="spoiler-buttons">
+				<button>
+					<img src="img/buttons/torrent.png" width="24" height="24" alt="torrent">
+					Скачать торрент
+				</button>
+				<button>
+					<img src="img/buttons/file.png" width="19" height="24" alt="file-sharing">
+					Файлообменник
+				</button>
+				<button>
+					<img src="img/buttons/sms.png" width="25" height="24" alt="SMS">
+					Кинопартнерка
+				</button>
+			</div>
+			<div class="social-likes">
+				<a href="#" class="tw-like"> </a>
+				<a href="#" class="fb-like"> </a>
+				<a href="#" class="vk-like"> </a>
+			</div>
+		</section>
+
+		<div class="screenshots">
+			<div class="screen-header"><h2>Кадры из фильма</h2></div>
+			<figure>
+				<img src="img/screenshots/scr-1.jpg" alt="screen1">
+				<img src="img/screenshots/scr-2.jpg" alt="screen2">
+				<img src="img/screenshots/scr-3.jpg" alt="screen3">
+				<img src="img/screenshots/scr-4.jpg" alt="screen4">
+				<img src="img/screenshots/scr-5.jpg" alt="screen5">
+				<img src="http://placekitten.com/178/130" alt="screen6">
+				<img src="http://placekitten.com/178/130" alt="screen7">
+				<img src="http://placekitten.com/178/130" alt="screen8">
+				<img src="http://placekitten.com/178/130" alt="screen9">
+
+			</figure>
+				<div class="turn-right"></div>
+				<div class="turn-left"></div>
+		</div>
+
+		<div class="treiler">
+			<iframe width="540" height="304" src="http://www.youtube.com/embed/4RGhKzUUaME" style="border:none" allowfullscreen>
+			</iframe>
+		</div>
+
+		<div class="comments">
+			<div id="vk_comments"></div>
+		</div>
+	</main>
+	<footer>
+		<div class="footer-logo">kinoruletka.ru</div>
+		<div class="copyright">2011 © Все права защищены.</div>
+		<a href="#top"></a>
+	</footer>
+</div>
+<script type="text/javascript">VK.Widgets.Comments("vk_comments", {limit: 5, width: "380", attach: false});</script>
 </body>
 </html>
